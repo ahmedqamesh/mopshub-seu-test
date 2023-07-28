@@ -6,6 +6,11 @@ To recreate the vivado project:
 \\TODO -Issue 'source ./recreate_project.tcl' in the Vivado Tcl console. 
 
 ---------------------------------
+
+# Just follow the following tutorial 
+https://digilent.com/reference/learn/programmable-logic/tutorials/htsspisf/start?_ga=2.186859688.1885957646.1685468583-1869752114.1684483189
+
+
 To export HW for SDK: (only if changes made on HW)
 
 -Generate Bitstream in Vivado

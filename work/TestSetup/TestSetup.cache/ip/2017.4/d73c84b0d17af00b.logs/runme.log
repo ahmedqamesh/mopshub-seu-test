@@ -1,0 +1,935 @@
+
+*** Running vivado
+    with args -log system_SEUtestIP3000_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_SEUtestIP3000_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_SEUtestIP3000_0_0.tcl -notrace
+Command: synth_design -top system_SEUtestIP3000_0_0 -part xc7a35ticsg324-1L -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2181 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:43 . Memory (MB): peak = 1411.070 ; gain = 88.996 ; free physical = 2626 ; free virtual = 24469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_SEUtestIP3000_0_0' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ip/system_SEUtestIP3000_0_0/synth/system_SEUtestIP3000_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'SEUtestIP3000' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/SEUtestIP3000.v:13]
+INFO: [Synth 8-638] synthesizing module 'axi_control_unit' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/axi_control_unit.v:13]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/axi_control_unit.v:253]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/axi_control_unit.v:293]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/axi_control_unit.v:319]
+WARNING: [Synth 8-5788] Register write_reg in module axi_control_unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/axi_control_unit.v:288]
+INFO: [Synth 8-256] done synthesizing module 'axi_control_unit' (1#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/axi_control_unit.v:13]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/clock_divider.v:5]
+WARNING: [Synth 8-5788] Register pulse_n_reg in module clock_divider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/clock_divider.v:31]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (2#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/clock_divider.v:5]
+INFO: [Synth 8-638] synthesizing module 'compare_counter' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:1]
+INFO: [Synth 8-256] done synthesizing module 'compare_counter' (3#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:1]
+INFO: [Synth 8-638] synthesizing module 'control' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/control_fsm.v:12]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter LOAD bound to: 4'b0001 
+	Parameter CLEAR bound to: 4'b0010 
+	Parameter SHIFT bound to: 4'b0011 
+	Parameter STORE bound to: 4'b0100 
+	Parameter STOREONEMOREINRUN bound to: 4'b0101 
+	Parameter STOREONEMORE bound to: 4'b0110 
+	Parameter RESTART bound to: 4'b0111 
+	Parameter RELOAD bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/control_fsm.v:128]
+INFO: [Synth 8-256] done synthesizing module 'control' (4#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/control_fsm.v:12]
+INFO: [Synth 8-638] synthesizing module 'counter' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/counter.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counter' (5#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/counter.v:1]
+INFO: [Synth 8-638] synthesizing module 'bytecounter' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/bytecounter.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bytecounter' (6#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/bytecounter.v:1]
+INFO: [Synth 8-638] synthesizing module 'fifo_in' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ip/system_SEUtestIP3000_0_0/src/fifo_in/synth/fifo_in.vhd:73]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 8 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 64 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 1 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 2kx9 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 2047 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 2046 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter C_RD_DEPTH bound to: 256 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 8 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_WR_DEPTH bound to: 2048 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 11 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_1' declared at '/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ip/system_SEUtestIP3000_0_0/src/fifo_in/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38483' bound to instance 'U0' of component 'fifo_generator_v13_2_1' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ip/system_SEUtestIP3000_0_0/src/fifo_in/synth/fifo_in.vhd:542]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_async_rst' [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1177]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1228]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_async_rst' (7#1) [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1177]
+INFO: [Synth 8-256] done synthesizing module 'fifo_in' (32#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ip/system_SEUtestIP3000_0_0/src/fifo_in/synth/fifo_in.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'fifo_out' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/fifo_out.v:1]
+INFO: [Synth 8-256] done synthesizing module 'fifo_out' (33#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/fifo_out.v:1]
+INFO: [Synth 8-638] synthesizing module 'golden_shift' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/golden_shift.v:1]
+	Parameter LENGTH bound to: 3000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'golden_shift' (34#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/golden_shift.v:1]
+INFO: [Synth 8-638] synthesizing module 'shift_in' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/shift_in.v:1]
+WARNING: [Synth 8-5788] Register data_reg_reg in module shift_in is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/shift_in.v:13]
+INFO: [Synth 8-256] done synthesizing module 'shift_in' (35#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/shift_in.v:1]
+INFO: [Synth 8-638] synthesizing module 'shift_out' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/shift_out.v:1]
+INFO: [Synth 8-256] done synthesizing module 'shift_out' (36#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/shift_out.v:1]
+INFO: [Synth 8-638] synthesizing module 'synch_in' [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/synch_in.v:1]
+INFO: [Synth 8-256] done synthesizing module 'synch_in' (37#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/synch_in.v:1]
+INFO: [Synth 8-256] done synthesizing module 'SEUtestIP3000' (38#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/SEUtestIP3000.v:13]
+INFO: [Synth 8-256] done synthesizing module 'system_SEUtestIP3000_0_0' (39#1) [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ip/system_SEUtestIP3000_0_0/synth/system_SEUtestIP3000_0_0.v:56]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SRST_FULL_FF
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SRST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SAFETY_CKT_WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[10]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[9]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[8]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[7]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[6]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[0]
+WARNING: [Synth 8-3331] design wr_bin_cntr has unconnected port SRST
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic has unconnected port RD_EN
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_RST_BUSY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port EMPTY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port ALMOST_EMPTY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[10]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[9]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[8]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[7]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[6]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[5]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[4]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[0]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[10]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[9]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[8]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[7]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[6]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[10]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[9]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[8]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[7]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[6]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[5]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[4]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port SRST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port RAM_ALMOST_EMPTY
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port SRST
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_bin_cntr has unconnected port SRST
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_RST_BUSY
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design rd_logic has unconnected port ALMOST_FULL_FB
+WARNING: [Synth 8-3331] design rd_logic has unconnected port FULL
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[10]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[9]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[8]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[7]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[6]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[5]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[4]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[0]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[7]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[6]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[5]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[4]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[0]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[7]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[6]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[7]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[6]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[5]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[4]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:49 ; elapsed = 00:02:45 . Memory (MB): peak = 1630.223 ; gain = 308.148 ; free physical = 2202 ; free virtual = 24056
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:49 ; elapsed = 00:02:46 . Memory (MB): peak = 1630.223 ; gain = 308.148 ; free physical = 2212 ; free virtual = 24066
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ip/system_SEUtestIP3000_0_0/src/fifo_in/fifo_in.xdc] for cell 'inst/fifo_in_simple_inst/U0'
+Finished Parsing XDC File [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ip/system_SEUtestIP3000_0_0/src/fifo_in/fifo_in.xdc] for cell 'inst/fifo_in_simple_inst/U0'
+Parsing XDC File [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ip/system_SEUtestIP3000_0_0/src/fifo_in/fifo_in.xdc] for cell 'inst/fifo_in_tmr_inst/U0'
+Finished Parsing XDC File [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ip/system_SEUtestIP3000_0_0/src/fifo_in/fifo_in.xdc] for cell 'inst/fifo_in_tmr_inst/U0'
+Parsing XDC File [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_SEUtestIP3000_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_SEUtestIP3000_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_SEUtestIP3000_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_SEUtestIP3000_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_SEUtestIP3000_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/fifo_in_simple_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/fifo_in_simple_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/fifo_in_tmr_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/fifo_in_tmr_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_SEUtestIP3000_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_SEUtestIP3000_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1824.406 ; gain = 0.008 ; free physical = 3045 ; free virtual = 24881
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:09 ; elapsed = 00:03:38 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3502 ; free virtual = 25341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:09 ; elapsed = 00:03:38 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3502 ; free virtual = 25341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/fifo_in_simple_inst/U0. (constraint file  /home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_SEUtestIP3000_0_0_synth_1/dont_touch.xdc, line 11).
+Applied set_property DONT_TOUCH = true for inst/fifo_in_tmr_inst/U0. (constraint file  /home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_SEUtestIP3000_0_0_synth_1/dont_touch.xdc, line 11).
+Applied set_property DONT_TOUCH = true for inst/fifo_in_simple_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fifo_in_simple_inst/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fifo_in_tmr_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/fifo_in_tmr_inst/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:09 ; elapsed = 00:03:38 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3500 ; free virtual = 25339
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "control_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dividor_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_out_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "write" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/clock_divider.v:38]
+WARNING: [Synth 8-6014] Unused sequential element cnt_ones_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:23]
+WARNING: [Synth 8-6014] Unused sequential element cnt_zeros_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:24]
+WARNING: [Synth 8-6014] Unused sequential element cnt_high_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:25]
+WARNING: [Synth 8-6014] Unused sequential element cnt_low_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:26]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'control'
+INFO: [Synth 8-5544] ROM "store" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mode_internal" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "idle" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clear" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/bytecounter.v:13]
+INFO: [Synth 8-5544] ROM "leaving_empty_fwft" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             0000
+                    LOAD |                             0001 |                             0001
+                   CLEAR |                             0010 |                             0010
+                   SHIFT |                             0011 |                             0011
+                  RELOAD |                             0100 |                             1000
+                 RESTART |                             0101 |                             0111
+       STOREONEMOREINRUN |                             0110 |                             0101
+                   STORE |                             0111 |                             0100
+            STOREONEMORE |                             1000 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:10 ; elapsed = 00:03:39 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3484 ; free virtual = 25323
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register shiftreg_reg [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/golden_shift.v:19]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 114   
++---Registers : 
+	             3000 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	               11 Bit    Registers := 8     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 51    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   7 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 44    
+	   6 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 12    
+	   9 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register shiftreg_reg [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/golden_shift.v:19]
+Hierarchical RTL Component report 
+Module axi_control_unit 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   7 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 26    
+	   6 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 9     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 3     
++---Registers : 
+	                1 Bit    Registers := 4     
+Module compare_counter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      4 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 5     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bytecounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module xpm_cdc_async_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module reset_blk_ramfifo__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+Module rd_bin_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+Module compare 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+Module rd_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module rd_fwft 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+Module wr_bin_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 4     
+Module compare__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 11    
+Module wr_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module reset_blk_ramfifo 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module fifo_out 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module golden_shift 
+Detailed RTL Component Info : 
++---Registers : 
+	             3000 Bit    Registers := 1     
+Module shift_in 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module shift_out 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module synch_in 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element simple_compare_counter_inst/cnt_ones_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:23]
+WARNING: [Synth 8-6014] Unused sequential element simple_compare_counter_inst/cnt_zeros_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:24]
+WARNING: [Synth 8-6014] Unused sequential element simple_compare_counter_inst/cnt_high_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:25]
+WARNING: [Synth 8-6014] Unused sequential element simple_compare_counter_inst/cnt_low_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:26]
+WARNING: [Synth 8-6014] Unused sequential element tmr_compare_counter_inst/cnt_ones_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:23]
+WARNING: [Synth 8-6014] Unused sequential element tmr_compare_counter_inst/cnt_zeros_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:24]
+WARNING: [Synth 8-6014] Unused sequential element tmr_compare_counter_inst/cnt_high_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:25]
+WARNING: [Synth 8-6014] Unused sequential element tmr_compare_counter_inst/cnt_low_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:26]
+INFO: [Synth 8-5546] ROM "inst/axi_control_unit_inst/write" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element inst/clock_divider_inst/counter_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/clock_divider.v:38]
+WARNING: [Synth 8-6014] Unused sequential element inst/bytecounter_inst/counter_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/bytecounter.v:13]
+WARNING: [Synth 8-6014] Unused sequential element inst/simple_compare_counter_inst/cnt_ones_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:23]
+WARNING: [Synth 8-6014] Unused sequential element inst/simple_compare_counter_inst/cnt_zeros_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:24]
+WARNING: [Synth 8-6014] Unused sequential element inst/simple_compare_counter_inst/cnt_high_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:25]
+WARNING: [Synth 8-6014] Unused sequential element inst/simple_compare_counter_inst/cnt_low_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:26]
+WARNING: [Synth 8-6014] Unused sequential element inst/tmr_compare_counter_inst/cnt_ones_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:23]
+WARNING: [Synth 8-6014] Unused sequential element inst/tmr_compare_counter_inst/cnt_zeros_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:24]
+WARNING: [Synth 8-6014] Unused sequential element inst/tmr_compare_counter_inst/cnt_high_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:25]
+WARNING: [Synth 8-6014] Unused sequential element inst/tmr_compare_counter_inst/cnt_low_reg was removed.  [/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.srcs/sources_1/bd/system/ipshared/27c3/src/compare_counter.v:26]
+INFO: [Synth 8-3917] design system_SEUtestIP3000_0_0 has port S_AXI_BRESP[1] driven by constant 0
+INFO: [Synth 8-3917] design system_SEUtestIP3000_0_0 has port S_AXI_BRESP[0] driven by constant 0
+INFO: [Synth 8-3917] design system_SEUtestIP3000_0_0 has port S_AXI_RRESP[1] driven by constant 0
+INFO: [Synth 8-3917] design system_SEUtestIP3000_0_0 has port S_AXI_RRESP[0] driven by constant 0
+INFO: [Synth 8-3332] Sequential element (inst/axi_control_unit_inst/axi_araddr_reg[1]) is unused and will be removed from module system_SEUtestIP3000_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/axi_control_unit_inst/axi_araddr_reg[0]) is unused and will be removed from module system_SEUtestIP3000_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/axi_control_unit_inst/axi_awaddr_reg[1]) is unused and will be removed from module system_SEUtestIP3000_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/axi_control_unit_inst/axi_awaddr_reg[0]) is unused and will be removed from module system_SEUtestIP3000_0_0.
+WARNING: [Synth 8-3332] Sequential element (inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/gae.ram_aempty_i_reg) is unused and will be removed from module fifo_generator_v13_2_1__xdcDup__1.
+WARNING: [Synth 8-3332] Sequential element (inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/gae.ram_aempty_i_reg) is unused and will be removed from module fifo_generator_v13_2_1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:13 ; elapsed = 00:03:43 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3458 ; free virtual = 25300
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/fifo_in_simple_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'insti_14/inst/simple_fifo_reset/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/fifo_in_tmr_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'insti_14/inst/tmr_fifo_reset/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:19 ; elapsed = 00:03:55 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3976 ; free virtual = 25838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:03:56 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3979 ; free virtual = 25840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:20 ; elapsed = 00:03:57 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3892 ; free virtual = 25762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:21 ; elapsed = 00:03:57 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3868 ; free virtual = 25738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:21 ; elapsed = 00:03:57 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3884 ; free virtual = 25754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:21 ; elapsed = 00:03:58 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3884 ; free virtual = 25754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:21 ; elapsed = 00:03:58 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3884 ; free virtual = 25754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:21 ; elapsed = 00:03:58 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3884 ; free virtual = 25754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:21 ; elapsed = 00:03:58 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3884 ; free virtual = 25754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    76|
+|2     |LUT1     |    43|
+|3     |LUT2     |   212|
+|4     |LUT3     |    48|
+|5     |LUT4     |   102|
+|6     |LUT5     |   145|
+|7     |LUT6     |   150|
+|8     |MUXCY    |    36|
+|9     |MUXF7    |     5|
+|10    |RAMB36E1 |     2|
+|11    |FDCE     |  3507|
+|12    |FDPE     |    44|
+|13    |FDRE     |   137|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------------------------------+----------------------------------------+------+
+|      |Instance                                                              |Module                                  |Cells |
++------+----------------------------------------------------------------------+----------------------------------------+------+
+|1     |top                                                                   |                                        |  4507|
+|2     |  inst                                                                |SEUtestIP3000                           |  4507|
+|3     |    fifo_in_simple_inst                                               |fifo_in__xdcDup__1                      |   231|
+|4     |      U0                                                              |fifo_generator_v13_2_1__xdcDup__1       |   231|
+|5     |        inst_fifo_gen                                                 |fifo_generator_v13_2_1_synth__xdcDup__1 |   231|
+|6     |          \gconvfifo.rf                                               |fifo_generator_top__xdcDup__1           |   231|
+|7     |            \grf.rf                                                   |fifo_generator_ramfifo__xdcDup__1       |   231|
+|8     |              \gntv_or_sync_fifo.gl0.rd                               |rd_logic_6                              |    53|
+|9     |                \gr1.gr1_int.rfwft                                    |rd_fwft_20                              |    16|
+|10    |                \grss.rsts                                            |rd_status_flags_ss_21                   |     2|
+|11    |                rpntr                                                 |rd_bin_cntr_22                          |    35|
+|12    |              \gntv_or_sync_fifo.gl0.wr                               |wr_logic_7                              |   101|
+|13    |                \gwss.wsts                                            |wr_status_flags_ss_15                   |    26|
+|14    |                  c0                                                  |compare__parameterized0_17              |     7|
+|15    |                  c1                                                  |compare__parameterized0_18              |     7|
+|16    |                  \gaf.c2                                             |compare__parameterized0_19              |     6|
+|17    |                wpntr                                                 |wr_bin_cntr_16                          |    75|
+|18    |              \gntv_or_sync_fifo.mem                                  |memory_8                                |    65|
+|19    |                \gbm.gbmg.gbmga.ngecc.bmg                             |blk_mem_gen_v8_4_1_9                    |     1|
+|20    |                  inst_blk_mem_gen                                    |blk_mem_gen_v8_4_1_synth_10             |     1|
+|21    |                    \gnbram.gnativebmg.native_blk_mem_gen             |blk_mem_gen_top_11                      |     1|
+|22    |                      \valid.cstr                                     |blk_mem_gen_generic_cstr_12             |     1|
+|23    |                        \ramloop[0].ram.r                             |blk_mem_gen_prim_width_13               |     1|
+|24    |                          \prim_noinit.ram                            |blk_mem_gen_prim_wrapper_14             |     1|
+|25    |              rstblk                                                  |reset_blk_ramfifo__xdcDup__1            |    12|
+|26    |                \ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst  |xpm_cdc_async_rst__2                    |     2|
+|27    |    fifo_in_tmr_inst                                                  |fifo_in                                 |   231|
+|28    |      U0                                                              |fifo_generator_v13_2_1                  |   231|
+|29    |        inst_fifo_gen                                                 |fifo_generator_v13_2_1_synth            |   231|
+|30    |          \gconvfifo.rf                                               |fifo_generator_top                      |   231|
+|31    |            \grf.rf                                                   |fifo_generator_ramfifo                  |   231|
+|32    |              \gntv_or_sync_fifo.gl0.rd                               |rd_logic                                |    53|
+|33    |                \gr1.gr1_int.rfwft                                    |rd_fwft                                 |    16|
+|34    |                \grss.rsts                                            |rd_status_flags_ss                      |     2|
+|35    |                rpntr                                                 |rd_bin_cntr                             |    35|
+|36    |              \gntv_or_sync_fifo.gl0.wr                               |wr_logic                                |   101|
+|37    |                \gwss.wsts                                            |wr_status_flags_ss                      |    26|
+|38    |                  c0                                                  |compare__parameterized0                 |     7|
+|39    |                  c1                                                  |compare__parameterized0_4               |     7|
+|40    |                  \gaf.c2                                             |compare__parameterized0_5               |     6|
+|41    |                wpntr                                                 |wr_bin_cntr                             |    75|
+|42    |              \gntv_or_sync_fifo.mem                                  |memory                                  |    65|
+|43    |                \gbm.gbmg.gbmga.ngecc.bmg                             |blk_mem_gen_v8_4_1                      |     1|
+|44    |                  inst_blk_mem_gen                                    |blk_mem_gen_v8_4_1_synth                |     1|
+|45    |                    \gnbram.gnativebmg.native_blk_mem_gen             |blk_mem_gen_top                         |     1|
+|46    |                      \valid.cstr                                     |blk_mem_gen_generic_cstr                |     1|
+|47    |                        \ramloop[0].ram.r                             |blk_mem_gen_prim_width                  |     1|
+|48    |                          \prim_noinit.ram                            |blk_mem_gen_prim_wrapper                |     1|
+|49    |              rstblk                                                  |reset_blk_ramfifo                       |    12|
+|50    |                \ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst  |xpm_cdc_async_rst                       |     2|
+|51    |    axi_control_unit_inst                                             |axi_control_unit                        |   327|
+|52    |    bitcounter_inst                                                   |counter                                 |     7|
+|53    |    bytecounter_inst                                                  |bytecounter                             |    21|
+|54    |    clock_divider_inst                                                |clock_divider                           |   163|
+|55    |    control_fsm                                                       |control                                 |    78|
+|56    |    fifo_out_inst                                                     |fifo_out                                |    33|
+|57    |    golden_shift_inst                                                 |golden_shift                            |  3024|
+|58    |    shift_out_inst                                                    |shift_out                               |    33|
+|59    |    simple_compare_counter_inst                                       |compare_counter                         |   165|
+|60    |    simple_shiftin_inst                                               |shift_in                                |     8|
+|61    |    simple_synchin_inst                                               |synch_in                                |     4|
+|62    |    simple_synchin_inst1                                              |synch_in_0                              |     5|
+|63    |    tmr_compare_counter_inst                                          |compare_counter_1                       |   165|
+|64    |    tmr_shiftin_inst                                                  |shift_in_2                              |     8|
+|65    |    tmr_synchin_inst                                                  |synch_in_3                              |     4|
++------+----------------------------------------------------------------------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:21 ; elapsed = 00:03:58 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3884 ; free virtual = 25754
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 974 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:10 ; elapsed = 00:03:15 . Memory (MB): peak = 1824.406 ; gain = 308.148 ; free physical = 3936 ; free virtual = 25804
+Synthesis Optimization Complete : Time (s): cpu = 00:02:21 ; elapsed = 00:03:58 . Memory (MB): peak = 1824.406 ; gain = 502.332 ; free physical = 3943 ; free virtual = 25810
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 119 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Sourcing Tcl File [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/fifo_in_tmr_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl:2]
+all_registers: Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 2293.590 ; gain = 453.168 ; free physical = 4887 ; free virtual = 26754
+Finished Sourcing Tcl File [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/fifo_in_tmr_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/fifo_in_simple_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/mnt/storage/sw/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/fifo_in_simple_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:29 ; elapsed = 00:04:27 . Memory (MB): peak = 2293.590 ; gain = 996.344 ; free physical = 4982 ; free virtual = 26849
+INFO: [Common 17-1381] The checkpoint '/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_SEUtestIP3000_0_0_synth_1/system_SEUtestIP3000_0_0.dcp' has been generated.
