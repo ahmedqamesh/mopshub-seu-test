@@ -1,48 +1,20 @@
-----------------------------------
-To recreate the vivado project:
+## Recreating the vivado project:
+1. Navigate to the 'work' directory. 
+2. Start Vivado  using the command `source ./recreate_project.tcl` in the Vivado Tcl console.
+3. Generate the bitstream file.
+4. Export Hardware HW for SDK (From File > Export > Export Hardware, make sure to check “Include bitstream” setting:)
+5. Follow the SDK Steps to create a bootloader and program the board section at the following manual [How To Store Your SDK Project in SPI Flash]([1111](https://digilent.com/reference/learn/programmable-logic/tutorials/htsspisf/start?_ga=2.186859688.1885957646.1685468583-1869752114.1684483189)
 
--Navigate to the 'work' directory. 
--Start Vivado. 
-\\TODO -Issue 'source ./recreate_project.tcl' in the Vivado Tcl console. 
-
----------------------------------
-
-# Just follow the following tutorial 
-https://digilent.com/reference/learn/programmable-logic/tutorials/htsspisf/start?_ga=2.186859688.1885957646.1685468583-1869752114.1684483189
-
-
-To export HW for SDK: (only if changes made on HW)
-
--Generate Bitstream in Vivado
--Select File>Export>Export Hardware
--Mark "Include bitstream"
--Select folder ../sdk (from the work directory)
-
----------------------------------
-To launch SDK: (from Vivado)
-
--Select File>Launch SDK
--Exported location: ../sdk
--Workspace : ../sdk
- (both path originating the work directory)
-
-Or launch SDK directly and select the sdk folder in the git repository as workspace
-
-if the build in SDK fails, you can try to manually recreate the BSP sources
--right click on the BSP project and select "Re-generate BSP Sources"
--do this for all BSP projects
--Build the other projects
-
-
------------------- ------------
-- To run and program the FPGA independent from Vivado and SDK. follow steps mentioned below 
-- Use 'Associate ELF files' option from the Vivado to include 'srec_spi_bootloader' file into the bitstream 
-- Use Vivado to program the flash with the new bitsream file 
-- Next step is to program the flash with the actual application.srec file using SDK (Use same Offset value which is defined in the blconfig.h file (srec_spi_bootloader sources))
-- Here is a good tutorial https://www.youtube.com/watch?v=EaS1-B3fnjQ
--------------------------------------------------------------------------------
-
-- If the above method to flash FPGA doesn't work the please follow this tutorial 
-- https://support.xilinx.com/s/article/64238?language=en_US
-- Program the FPGA with bitstream file and using srec_spi_bootloader. This will generate a download.bit file
-- Flash with download.bit file and then with application.srec file. Pay attention to the offset and use value defined in blconfig.h  file
+## Installation
+1. Go to the directory : `$Proj_dir/python` . 
+2. Use the command `python2.7 PATT_SEUtest.py -c 1 -f 100`.<br/>
+**Note:** The file  works with some arguments:<pre><code>-h :help
+-m  :Manual mode
+-d  :Activate debug output
+-c  :chip id 
+-n  :number of FPGA to use 
+-t  :Shift hold time in s
+-f  :Shift Frequency in kHz
+-F  :Shift Frequency in Hz
+-a  :ADC monitoring Intervall in s</code></pre>
+3. The script will produce an output directory under `$Proj_dir/python/irradiation_data` for the specified chip

@@ -1,5 +1,4 @@
 ##Pmod Header JA
-
 set_property -dict {PACKAGE_PIN G13 IOSTANDARD LVCMOS33} [get_ports {dout[4]}]
 set_property -dict {PACKAGE_PIN B11 IOSTANDARD LVCMOS33 SLEW FAST} [get_ports shift_mode]
 set_property PACKAGE_PIN A11 [get_ports {din[4]}]
@@ -23,7 +22,7 @@ set_property -dict {PACKAGE_PIN D15 IOSTANDARD LVCMOS33} [get_ports {ss_enc_out[
 #set_property -dict { PACKAGE_PIN C15 IOSTANDARD LVCMOS33 } [get_ports { jb[3] }]; #IO_L12N_T1_MRCC_15 Sch=jb_n[2]
 set_property -dict {PACKAGE_PIN J17 IOSTANDARD LVCMOS33 SLEW FAST} [get_ports io0_o]
 set_property -dict {PACKAGE_PIN J18 IOSTANDARD LVCMOS33} [get_ports {ss_enc_out[0]}]
-set_property -dict {PACKAGE_PIN K15 IOSTANDARD LVCMOS33} [get_ports {ss_enc_out[2]}]
+set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33} [get_ports {ss_enc_out[2]}]
 #set_property -dict { PACKAGE_PIN J15 IOSTANDARD LVCMOS33 } [get_ports { jb[7] }]; #IO_L24N_T3_RS0_15 Sch=jb_n[4]
 
 
@@ -95,3 +94,4 @@ set_property BITSTREAM.CONFIG.UNUSEDPIN Pulldown [current_design]
 
 #set_property IOSTANDARD LVCMOS33 [get_ports led_16bits]
 #set_property PACKAGE_PIN G6 [get_ports led_16bits]
+

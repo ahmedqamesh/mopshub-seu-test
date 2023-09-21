@@ -1,4 +1,4 @@
-09:55:04 **** Auto Build of configuration Debug for project Bootloader ****
+14:27:06 **** Build of configuration Debug for project Bootloader ****
 make all 
 Building file: ../src/bootloader.c
 Invoking: MicroBlaze gcc compiler
@@ -64,6 +64,11 @@ Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../Bootloader_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 Finished building: ../src/platform.c
  
+Building file: ../src/srec.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/srec.o" -I../../Bootloader_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/srec.d" -MT"src/srec.o" -o "src/srec.o" "../src/srec.c"
+Finished building: ../src/srec.c
+ 
 Building target: Bootloader.elf
 Invoking: MicroBlaze gcc linker
 mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Bootloader_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Bootloader.elf"  ./src/bootloader.o ./src/platform.o ./src/srec.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilisf,-lxil,-lgcc,-lc,--end-group
@@ -76,5 +81,5 @@ mb-size Bootloader.elf  |tee "Bootloader.elf.size"
 Finished building: Bootloader.elf.size
  
 
-09:55:04 Build Finished (took 313ms)
+14:27:07 Build Finished (took 1s.169ms)
 
