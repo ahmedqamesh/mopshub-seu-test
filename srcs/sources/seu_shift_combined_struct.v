@@ -26,35 +26,37 @@ parameter LENGTH =  3000;
 
 
 // Internal signal declarations
-wire clk;
+//wire clk;
 wire clk_n;
 wire data_in_n;
 wire mode_n;
 wire data_out_n;
 wire data_outTMR_n;
 
-// input clock buffer
+// input clock buffer  to buffer the external clock signal. 
+//This is a standard practice to ensure proper handling of the incoming clock signal.
 IBUFG clkbuf(
   .I (clk_in),
   .O (clk)
 );
 
+
 // invert signals as in level shifter
-assign clk_n = clk;
-assign data_in_n = data_in;
-assign mode_n = mode;
-assign data_out = data_out_n;
-assign data_outTMR = data_outTMR_n;
+assign clk_n = ~clk;
+assign data_in_n = ~data_in;
+assign mode_n = ~mode;
+assign data_out = ~data_out_n;
+assign data_outTMR = ~data_outTMR_n;
 
 // Instances 
-seu_shift_reg #(LENGTH) U_1( 
+seu_shift_reg #(LENGTH) seu_shift_reg0( 
    .clk      (clk_n), 
    .data_in  (data_in_n), 
    .mode     (mode_n), 
    .data_out (data_out_n)
 ); 
 
-seu_shift_reg_tmr #(LENGTH) U_0( 
+seu_shift_reg_tmr #(LENGTH) seu_shift_reg_tmr0( 
    .clk      (clk_n),   
    .data_in  (data_in_n),  
    .mode     (mode_n),  
