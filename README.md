@@ -1,6 +1,6 @@
 ## Recreating the vivado project:
 1. Navigate to the 'work' directory. 
-2. Start Vivado  using the command `source ./recreate_project.tcl` in the Vivado Tcl console.
+2. Start Vivado  using the command `source ./vivado/recreate_project.tcl` in the Vivado Tcl console.
 3. Generate the bitstream file.
 4. Export Hardware HW for SDK (From File > Export > Export Hardware, make sure to check “Include bitstream” setting:)
 5. Follow the SDK Steps to create a bootloader and program the board section at the following manual [How To Store Your SDK Project in SPI Flash]([1111](https://digilent.com/reference/learn/programmable-logic/tutorials/htsspisf/start?_ga=2.186859688.1885957646.1685468583-1869752114.1684483189)

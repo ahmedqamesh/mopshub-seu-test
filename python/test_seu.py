@@ -25,7 +25,7 @@ _bypassreg = 0x0E  # automatic bypass active, reset flags, bypass off
 
 # Help text
 def parameterhelp():
-	print ("PATT_SEUtest.py ")
+	print ("test_seu.py ")
 	print ("-h (help)")
 	print ("-m (Manual mode)")
 	print ("-d (Activate debug output)")

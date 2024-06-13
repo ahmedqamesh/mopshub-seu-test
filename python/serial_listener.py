@@ -227,9 +227,10 @@ class listener():
 		#
 
 		statuscolor("Listener for FPGA {:d} started".format(self.fpgaid), self.fpgaid)
+		i = 0
 		while(1):
 			line = self.readline()
-			
+			i = i+1
 			# stop listener
 			if line['line'] in ['q']:
 				self.write_info(line['timestamp'], self.simple_seus, self.simple_high, self.simple_low,
@@ -278,10 +279,10 @@ class listener():
 					temp_s_seus = values[0] + values[1]
 					temp_t_seus = values[2] + values[3]
 					# print monitoring state of SEU
-					statuscolor("FPGA{:d} ".format(self.fpgaid) + "# of SEUs in Simple:\t total\t: " + \
+					statuscolor("["+str(i)+"]FPGA{:d} ".format(self.fpgaid) + "# of SEUs in Simple:\t total\t: " + \
 							"{:d}\t\t0to1\t: {:d}\t\t1to0\t: {:d}".format(\
 							temp_s_seus, values[0], values[1]), textcolor=self.fpgaid)
-					statuscolor("FPGA{:d} ".format(self.fpgaid) + "# of SEUs in TMR:\t total\t: " + \
+					statuscolor("["+str(i)+"]FPGA{:d} ".format(self.fpgaid) + "# of SEUs in TMR:\t total\t: " + \
 							"{:d}\t\t0to1\t: {:d}\t\t1to0\t: {:d}".format(\
 							temp_t_seus, values[2], values[3]), textcolor=self.fpgaid)
 

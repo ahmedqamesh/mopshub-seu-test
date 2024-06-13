@@ -5,14 +5,14 @@ import serial as se
 from logging_messages import *
 import time
 ##
-# @file port.py
+# @file serial_port.py
 # @author Maximilian Caspar, Niklaus Lehmann
 # University of Wuppertal, Department of Particle Physics, 2018
 #
 # Auxiliary file to help with identifying the serial port of the master
 #
 
-def get_controller_port(fid=-1,baudrate=921600, test = "PSPPv4 initial "):
+def get_controller_port(fid=-1,baudrate=921600, test = "seu test"):
 	##
 	# @return Serial port as string
 	#
@@ -24,6 +24,7 @@ def get_controller_port(fid=-1,baudrate=921600, test = "PSPPv4 initial "):
 		status("Looking for FPGA")
 	# expected version data
 	edate = datetime.datetime(2019,2,8)
+	
 	# get all serial ports with a digilent device	
 	ports = get_serial_port("0403:6010") # digilent usb serial port
 	for p in ports:
@@ -46,23 +47,25 @@ def get_controller_port(fid=-1,baudrate=921600, test = "PSPPv4 initial "):
 				continue
 			# extract version date
 			try:
-				vdate = datetime.datetime.strptime(re,test+"test v%y.%m.%d")
+				vdate = datetime.datetime.strptime(re,test+" v%y.%m.%d")
+				
 			except ValueError: 
 				warning("Found FPGA with wrong Software : {}".format(re))
 				continue
 			# check if firmware is new enough
 			if ((vdate >= edate) and (fid == -1)):
-				success("FPGA found on "+p, file="port.py")
+				success("FPGA found on "+p, file="serial_port.py")
 				s.flush()
 				s.close()
 				return p
 
 			elif (vdate < edate):
-				status("Port with old version found on "+p, file="port.py")
+				status("Port with old version found on "+p, file="serial_port.py")
 				continue
 					
 			elif (vdate >= edate):
-				status("Port found on "+p, file="port.py")
+				
+				status("Port found on "+p, file="serial_port.py")
 				# get fpga id
 				#s.write("i\n")
 				s.write("i\n".encode('utf-8'))#replaced by Qamesh  to convert the Unicode string to bytes using the UTF-8 encoding. 
@@ -74,7 +77,7 @@ def get_controller_port(fid=-1,baudrate=921600, test = "PSPPv4 initial "):
 				str_re = str(re)[5]
 				fpgaid = int(str_re,16)
 				if (fid == fpgaid):
-					success("FPGA found on "+p, file="port.py")
+					success("FPGA found on "+p, file="serial_port.py")
 					s.flush()
 					s.close()
 					return p
@@ -84,7 +87,7 @@ def get_controller_port(fid=-1,baudrate=921600, test = "PSPPv4 initial "):
 			s.readline() # read Ready line
 			s.flush()
 			s.close()
-	error("No controller found, please check that JP2 (CK_RST) is not set. Verify also FPGA ID. Expected HW version is v{:s} or newer".format(edate.strftime('%y.%m.%d')), file="port.py")
+	error("No controller found, please check that JP2 (CK_RST) is not set. Verify also FPGA ID. Expected HW version is v{:s} or newer".format(edate.strftime('%y.%m.%d')), file="serial_port.py")
 
 
 def get_serial_port(vid_pid):

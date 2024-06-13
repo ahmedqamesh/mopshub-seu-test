@@ -29,7 +29,7 @@ logger.info('curret working path: '+path)
 #root_dir = os.path.dirname(os.path.abspath(__file__))
 #sys.path.append(os.path.dirname(root_dir))
 PdfPages = PdfPages(path+'/output_dir/'+'seu_data.pdf')
-
+from plot_style import *
 # Define the data from the table
 
 # global variables

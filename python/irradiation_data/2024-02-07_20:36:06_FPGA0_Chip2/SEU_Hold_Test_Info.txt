@@ -1,6 +1,0 @@
-SEU Hold Test 	Date: 2024-02-07_20:36:06
-Chip ID: 2
-Shift periode: 2.000s	Clock Frequency: 1000.000Hz
-ADC Intervall: 0.100s
-MOPSHub monitoring interval: 5.000s	MOPSHub register interval: 10.000	MOPSHub write interval:30.000
-Time[s]	#SEU_s	#SEU_s 0to1	#SEU_s 1to0	#SEU_t	#SEU_t 0to1	#SEU_t 1to0	MOPSHuberror	Comment

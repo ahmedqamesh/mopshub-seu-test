@@ -1,1 +1,0 @@
-Time[s]	V_sup	I_sup	Vdd_a	Vdd_d	V_ref	V_bg	V_int	Temp0	Temp1	ThTemp	ThMod	Vglobal	Vdd_SEU	Iby	GND
