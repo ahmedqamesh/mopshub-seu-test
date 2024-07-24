@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_auto_cc_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_uartlite_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_timer_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_axi_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_ilmb_v10_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xbar_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_clk_wiz_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_intc_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_axi_intc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_gpio_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_smc_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_dlmb_v10_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="system_ilmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="system_scb_testmaster_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_scb_testmaster_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_mdm_1_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_microblaze_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_lmb_bram_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xlconcat_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_xlconcat_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_seu_shift_combined_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_seu_shift_combined_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rst_mig_7series_0_83M_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_rst_mig_7series_0_83M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rst_clk_wiz_0_166M_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_rst_clk_wiz_0_166M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rst_clk_wiz_0_100M_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_rst_clk_wiz_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_mig_7series_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_mig_7series_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_SEUtestIP3000_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_SEUtestIP3000_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_quad_spi_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_axi_quad_spi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_quad_spi_1_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_axi_quad_spi_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_Inverter_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_Inverter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_gpio_1_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_axi_gpio_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_Encoder_0_0_synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/system_Encoder_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_auto_cc_0_synth_1"/>
+		<Parent Id="system_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="system_axi_timer_0_0_synth_1"/>
+		<Parent Id="system_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="system_ilmb_v10_0_synth_1"/>
+		<Parent Id="system_xbar_0_synth_1"/>
+		<Parent Id="system_clk_wiz_0_0_synth_1"/>
+		<Parent Id="system_axi_intc_0_0_synth_1"/>
+		<Parent Id="system_axi_gpio_0_0_synth_1"/>
+		<Parent Id="system_axi_smc_0_synth_1"/>
+		<Parent Id="system_dlmb_v10_0_synth_1"/>
+		<Parent Id="system_scb_testmaster_0_0_synth_1"/>
+		<Parent Id="system_mdm_1_0_synth_1"/>
+		<Parent Id="system_microblaze_0_0_synth_1"/>
+		<Parent Id="system_lmb_bram_0_synth_1"/>
+		<Parent Id="system_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="system_xlconcat_0_0_synth_1"/>
+		<Parent Id="system_seu_shift_combined_0_0_synth_1"/>
+		<Parent Id="system_rst_mig_7series_0_83M_0_synth_1"/>
+		<Parent Id="system_rst_clk_wiz_0_166M_0_synth_1"/>
+		<Parent Id="system_rst_clk_wiz_0_100M_0_synth_1"/>
+		<Parent Id="system_mig_7series_0_0_synth_1"/>
+		<Parent Id="system_SEUtestIP3000_0_0_synth_1"/>
+		<Parent Id="system_axi_quad_spi_0_0_synth_1"/>
+		<Parent Id="system_axi_quad_spi_1_0_synth_1"/>
+		<Parent Id="system_Inverter_0_0_synth_1"/>
+		<Parent Id="system_axi_gpio_1_0_synth_1"/>
+		<Parent Id="system_Encoder_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/dcs/git/mopshub-seu-test/work/TestSetup/TestSetup.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="system_auto_cc_0_synth_1"/>
+		<Parent Id="system_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="system_axi_timer_0_0_synth_1"/>
+		<Parent Id="system_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="system_ilmb_v10_0_synth_1"/>
+		<Parent Id="system_xbar_0_synth_1"/>
+		<Parent Id="system_clk_wiz_0_0_synth_1"/>
+		<Parent Id="system_axi_intc_0_0_synth_1"/>
+		<Parent Id="system_axi_gpio_0_0_synth_1"/>
+		<Parent Id="system_axi_smc_0_synth_1"/>
+		<Parent Id="system_dlmb_v10_0_synth_1"/>
+		<Parent Id="system_scb_testmaster_0_0_synth_1"/>
+		<Parent Id="system_mdm_1_0_synth_1"/>
+		<Parent Id="system_microblaze_0_0_synth_1"/>
+		<Parent Id="system_lmb_bram_0_synth_1"/>
+		<Parent Id="system_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="system_xlconcat_0_0_synth_1"/>
+		<Parent Id="system_seu_shift_combined_0_0_synth_1"/>
+		<Parent Id="system_rst_mig_7series_0_83M_0_synth_1"/>
+		<Parent Id="system_rst_clk_wiz_0_166M_0_synth_1"/>
+		<Parent Id="system_rst_clk_wiz_0_100M_0_synth_1"/>
+		<Parent Id="system_mig_7series_0_0_synth_1"/>
+		<Parent Id="system_SEUtestIP3000_0_0_synth_1"/>
+		<Parent Id="system_axi_quad_spi_0_0_synth_1"/>
+		<Parent Id="system_axi_quad_spi_1_0_synth_1"/>
+		<Parent Id="system_Inverter_0_0_synth_1"/>
+		<Parent Id="system_axi_gpio_1_0_synth_1"/>
+		<Parent Id="system_Encoder_0_0_synth_1"/>
+	</Run>
+</Runs>
+

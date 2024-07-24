@@ -35,7 +35,7 @@ wire data_outTMR_n;
 
 // input clock buffer  to buffer the external clock signal. 
 //This is a standard practice to ensure proper handling of the incoming clock signal.
-IBUFG clkbuf(
+BUFG clkbuf(
   .I (clk_in),
   .O (clk)
 );
@@ -46,7 +46,11 @@ assign clk_n = ~clk;
 assign data_in_n = ~data_in;
 assign mode_n = ~mode;
 assign data_out = ~data_out_n;
+
 assign data_outTMR = ~data_outTMR_n;
+
+
+
 
 // Instances 
 seu_shift_reg #(LENGTH) seu_shift_reg0( 

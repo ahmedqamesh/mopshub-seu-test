@@ -8,7 +8,7 @@
 ## Installation and usage
 **To run SEU test:**
 1. Go to the directory : `$Proj_dir/python` . 
-2. Use the command `/usr/bin/python3 test_seu.py -c 2 -f 1 F 1`.<br/>
+2. Use the command `/usr/bin/python3 test_seu.py -c 2 -f 1000`.<br/>
 **Note:** The file  works with some arguments:<pre><code>-h :help
 -m  :Manual mode
 -d  :Activate debug output
