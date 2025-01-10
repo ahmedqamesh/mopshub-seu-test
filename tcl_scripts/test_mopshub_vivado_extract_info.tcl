@@ -207,7 +207,7 @@ specialPrint "INFO" "Creating test files at $::vivado_ip_out_path"
 #disconnect_hw_server
 open_hw_manager
 connect_hw_server -allow_non_jtag
-update_compile_order -fileset sources_1
+#update_compile_order -fileset sources_1
 
 set hw_targets [get_hw_targets]
 set target_device [lindex $hw_targets 0]
