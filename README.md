@@ -10,10 +10,9 @@ The system provides:
 - automated logging and analysis
 - comparison between standard and TMR-protected logic
 
-===============================================================================
-REPOSITORY STRUCTURE
-===============================================================================
+## Repository Structure
 
+```bash
 .
 ├── firmware/          FPGA/Vivado sources
 ├── python/            Data acquisition and analysis scripts
@@ -21,11 +20,10 @@ REPOSITORY STRUCTURE
 ├── constraints/       FPGA pin constraints
 ├── bitstreams/        Generated FPGA images
 └── irradiation_data/  Acquired measurement data
+```
 
-
-===============================================================================
-RECREATING THE VIVADO PROJECT
-===============================================================================
+# Usage
+## Creating Vivado Project
 
 Requirements:
 - Vivado
@@ -44,9 +42,7 @@ Requirements:
 Reference:
 https://digilent.com/reference/learn/programmable-logic/tutorials/htsspisf/start
 
-===============================================================================
-Running an SEU Test
-===============================================================================
+## Running an SEU Test
 
 Navigate to the Python directory:
 ```bash
@@ -76,11 +72,12 @@ python/irradiation_data/<CHIP_NAME>/
 e.g: `python/irradiation_data/CHIP_NAME/SEU_Hold_Test_Info.txt`
 
 To analyze recorded irradiation data: `/usr/bin/python3 analyze_Irradiation_data.py --all irradiation_data/<DATA_DIR>`
-===============================================================================
-TEST SETUP
-===============================================================================
 
-![seu_setup_schematics](.assets/seu_setup_schematics.png)
+# Test Setup
+
+<p align="center">
+  <img src=".assets/seu_setup_schematics.png" width="700">
+</p>
 
 The setup consists of:
 - FPGA-based data generator
@@ -96,14 +93,15 @@ At each rising clock edge:
 - data is held when shift_mode = 0
 
 The readback stream is continuously monitored to detect SEU-induced bit flips.
-===============================================================================
-DATA GENERATOR BOARD
-===============================================================================
+
+## Data Generator board
 
 The setup uses a Digilent Arty A7 FPGA development board featuring
 a Xilinx Artix-7 FPGA as the central control and data-generation unit.
 
-![seu_system_arty](.assets/seu_system_arty.png)
+<p align="center">
+  <img src=".assets/seu_system_arty.png" width="300">
+</p>
 
 The Arty A7 has four Pmod connectors are assigned as following:<br>
 <div align="center">
@@ -126,9 +124,7 @@ The Arty A7 has four Pmod connectors are assigned as following:<br>
 </div>
 
 
-===============================================================================
-External connection to DUT
-===============================================================================
+## External connection to DUT
 
 The 14-pin Box connector is assigned as following:<br>
 <div align="center">
