@@ -22,7 +22,6 @@ The system provides:
 └── irradiation_data/  Acquired measurement data
 ```
 
-# Usage
 ## Creating Vivado Project
 
 Requirements:
@@ -71,7 +70,10 @@ python/irradiation_data/<CHIP_NAME>/
 ```
 e.g: `python/irradiation_data/CHIP_NAME/SEU_Hold_Test_Info.txt`
 
-To analyze recorded irradiation data: `/usr/bin/python3 analyze_Irradiation_data.py --all irradiation_data/<DATA_DIR>`
+To analyze recorded irradiation data: 
+```bash
+/usr/bin/python3 analyze_Irradiation_data.py --all irradiation_data/<DATA_DIR>
+```
 
 # Test Setup
 
@@ -100,7 +102,7 @@ The setup uses a Digilent Arty A7 FPGA development board featuring
 a Xilinx Artix-7 FPGA as the central control and data-generation unit.
 
 <p align="center">
-  <img src=".assets/seu_system_arty.png" width="300">
+  <img src=".assets/seu_system_arty.png" width="500">
 </p>
 
 The Arty A7 has four Pmod connectors are assigned as following:<br>
