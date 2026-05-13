@@ -1,4 +1,4 @@
-# SEU Evaluation System
+# SEU Evaluation Framework
 
 A hardware and software framework for evaluating Single Event Upsets (SEUs) in digital logic using configurable shift-register test structures implemented
 on FPGA devices.
