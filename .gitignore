@@ -1,7 +1,7 @@
-/vivado/mopshub_seu/mopshub_board_seu*
-/vivado/mopshub_seu/.Xil*
-/vivado/mopshub_seu/webtalk*
-!/vivado/mopshub_seu/
+/vivado/mopshub_seu_example/mopshub_board_seu*
+/vivado/mopshub_seu_example/.Xil*
+/vivado/mopshub_seu_example/webtalk*
+!/vivado/mopshub_seu_example/
 
 /vivado//irradiation_data*
 !/vivado//irradiation_data/
